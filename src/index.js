@@ -1,18 +1,20 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App';
-import { initMiniApp, mockTelegramEnv, parseInitData } from '@telegram-apps/sdk';
+import { init, mockTelegramEnv, parseInitData } from '@telegram-apps/sdk';
 
 const initializeTelegramSDK = async () => {
     try {
+        // Попытка инициализировать настоящее окружение Telegram
         console.log("Инициализация окружения Telegram");
-        const [miniApp] = initMiniApp();
-        await miniApp.ready();
+        const telegram = init(); // Используем init() вместо MiniApp.init()
+        await telegram.ready();
         console.log("Telegram окружение успешно инициализировано");
 
-        // После успешной инициализации рендерим приложение
+        // Рендеринг React-приложения после инициализации
         renderApp();
     } catch (error) {
+        // В случае ошибки инициализируем фейковое окружение
         console.error('Ошибка при инициализации Telegram:', error);
 
         const initDataRaw = new URLSearchParams([
@@ -56,21 +58,17 @@ const initializeTelegramSDK = async () => {
 
         console.log('Mock Telegram environment initialized');
 
-        // Рендерим приложение даже при фейковом окружении
+        // Рендеринг React-приложения после инициализации mock окружения
         renderApp();
     }
 };
 
-// Функция для рендеринга приложения
+// Функция рендеринга React-приложения
 const renderApp = () => {
     const container = document.getElementById('root');
     const root = createRoot(container);
-    root.render(
-        <React.StrictMode>
-            <App />
-        </React.StrictMode>
-    );
+    root.render(<App />);
 };
 
-// Инициализация SDK и рендеринг приложения
+// Инициализация SDK
 initializeTelegramSDK();
