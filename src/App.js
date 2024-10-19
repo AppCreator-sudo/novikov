@@ -16,11 +16,11 @@ function App() {
           </header>
           <nav>
             <ul>
-              <li><Link to="/bar-menu">Барное меню</Link></li>
+              <li><Link to="/bar-menu">Меню Бара (для официантов)</Link></li>
               <li><Link to="/schedule">График работы</Link></li>
               <li><Link to="/team">Команда проекта</Link></li>
               <li><Link to="/concept">Концепция Хинкальной</Link></li>
-              <li><Link to="/kitchen-menu">Кухонное меню</Link></li>
+              <li><Link to="/kitchen-menu">Меню Кухни (для официантов)</Link></li>
             </ul>
           </nav>
 

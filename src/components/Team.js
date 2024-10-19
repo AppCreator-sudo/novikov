@@ -9,7 +9,7 @@ function TeamSection() {
     const teamMembers = [
         {
             id: 1,
-            name: "САФОНОВ ЕВГЕНИЙВИКТОРОВИЧ",
+            name: "САФОНОВ ЕВГЕНИЙ ВИКТОРОВИЧ",
             position: "БРЕНД - ШЕФ(МОСКВА)",
             image: member1
         },
