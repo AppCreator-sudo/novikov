@@ -1,38 +1,202 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.app {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+header {
+  background-color: #333;
   color: white;
+  padding: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+header h1 {
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav {
+  margin: 2rem 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 1rem 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #007BFF;
+  font-size: 1.5rem;
+}
+
+nav ul li a:hover {
+  color: #0056b3;
+}
+
+/* Стили для изображений */
+img {
+  width: 100%;
+  max-width: 400px;
+  margin: 1rem 0;
+  border-radius: 25px; /* Закругленные углы у изображений */
+}
+
+/* Заголовки */
+h2 {
+  color: #333;
+}
+
+/* Стили для карточек блюд */
+.dish {
+  border: 2px solid #ddd;      /* Рамка вокруг каждой карточки */
+  border-radius: 25px;          /* Закругленные углы */
+  padding: 25px;               /* Внутренние отступы */
+  margin-bottom: 20px;         /* Отступ между карточками */
+  background-color: #fff;      /* Фон карточки */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Анимация при наведении */
+}
+
+.dish:hover {
+  transform: translateY(-5px); /* Поднимает карточку при наведении */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Усиление тени при наведении */
+}
+
+.dish h3 {
+  margin-top: 12px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.dish p {
+  font-size: 1.3rem;
+  color: #666;
+}
+.team-container {
+  display: flex;
+  justify-content: space-around; /* Распределение карточек */
+  flex-wrap: wrap; /* Перенос карточек на следующую строку при необходимости */
+  margin: 20px 0; /* Отступ сверху и снизу */
+}
+/* Стили для команды */
+.team-card {
+  background-color: #fff; /* Цвет фона карточки */
+  border: 1px solid #ddd; /* Граница карточки */
+  border-radius: 15px; /* Скругление углов */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень */
+  width: 250px; /* Ширина карточки */
+  text-align: center; /* Центрирование текста */
+  margin: 10px; /* Отступ между карточками */
+  padding: 15px; /* Внутренний отступ */
+}
+
+.team-card img {
+  width: 100%; /* Изображение занимает всю ширину карточки */
+  height: auto; /* Автоматическая высота */
+  border-radius: 15px; /* Скругление углов изображения */
+}
+/* Стили для карточек концепции */
+.concept-card {
+  border: 2px solid #ddd;      /* Рамка вокруг каждой карточки */
+  border-radius: 25px;         /* Закругленные углы */
+  padding: 25px;               /* Внутренние отступы */
+  margin-bottom: 20px;         /* Отступ между карточками */
+  background-color: #fff;      /* Фон карточки */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Анимация при наведении */
+  display: flex;               /* Использование flexbox для вертикального выравнивания */
+  flex-direction: column;      /* Вертикальное расположение элементов */
+  align-items: center;         /* Центрирование содержимого */
+}
+
+.concept-card:hover {
+  transform: translateY(-5px); /* Поднимает карточку при наведении */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Усиление тени при наведении */
+}
+
+.concept-card h3 {
+  margin-top: 12px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.concept-card p {
+  font-size: 1.3rem;
+  color: #666;
+  text-align: center;          /* Центрирование текста */
+}
+
+/* Стили для изображений в концепции */
+.concept-card img {
+  width: 100%;                 /* Ширина изображения 100% от родительского элемента */
+  max-width: 300px;           /* Максимальная ширина для изображений */
+  height: auto;                /* Автоматическая высота для сохранения пропорций */
+  border-radius: 15px;        /* Закругленные углы для изображений */
+  object-fit: cover;          /* Сохранение пропорций изображения */
+  margin-bottom: 15px;        /* Отступ снизу для изображения */
+}
+/* Контейнер для всего расписания */
+.schedule-container {
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Заголовок */
+.schedule-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Карточка расписания */
+.schedule-card {
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.schedule-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Заголовок карточки */
+.schedule-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Список дней */
+.schedule-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.schedule-card li {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+/* Подчеркнуть день недели */
+.schedule-card strong {
+  color: #333;
 }
