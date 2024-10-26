@@ -1,13 +1,13 @@
-// App.js
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Categories from './components/Categories'; // Импортируй компонент категорий
+import Categories from './components/Categories';
 import Concept from './components/Concept';
 import Schedule from './components/Schedule';
 import Team from './components/Team';
 import BarMenu from './components/BarMenu';
-import DishList from './components/DishList'; // Импортируй новый компонент DishList
+import DishList from './components/DishList';
 import './App.css';
+//import logo from './assets/logo.png'; // Импорт логотипа
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,16 +33,19 @@ function App() {
   return (
       <Router>
         <div className="app">
+          {/* Логотип на заднем фоне */}
+          <div className="logo-background"></div>
+
           <header>
             <div className="menu-icon" onClick={toggleMenu}>
-              &#9776; {/* Иконка "гамбургер" */}
+              &#9776;
             </div>
-            <h1>ПТИЧКА</h1>
+            <h1>ПТИЧКА by Novikov</h1>
           </header>
 
           <nav className={`side-menu ${isMenuOpen ? 'open' : ''}`}>
             <button className="close-btn" onClick={toggleMenu}>
-              &times; {/* Иконка закрытия */}
+              &times;
             </button>
             <ul>
               <li><Link to="/bar-menu" onClick={toggleMenu}>Меню Бара (для официантов)</Link></li>
@@ -59,7 +62,7 @@ function App() {
             <Route path="/team" element={<Team />} />
             <Route path="/concept" element={<Concept />} />
             <Route path="/kitchen-menu" element={<Categories />} />
-            <Route path="/kitchen-menu/:category" element={<DishList />} /> {/* Обновлен маршрут */}
+            <Route path="/kitchen-menu/:category" element={<DishList />} />
           </Routes>
         </div>
       </Router>
