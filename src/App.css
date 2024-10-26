@@ -56,8 +56,8 @@ header h1 {
   cursor: pointer;
   color: white;
   position: absolute;
-  left: 20px;
-  top: 20px;
+  left: 3%;
+  top: 15%;
 }
 
 /* Боковое меню */
