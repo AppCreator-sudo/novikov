@@ -22,7 +22,7 @@ function TeamSection() {
         {
             id: 3,
             name: "БРЕГАДЗЕ ВИТАЛИЙ НИАЗОВИЧ",
-            // Здесь нет поля position
+            position: "РЕСТОРАТОР",
             image: member3
         }
     ];
