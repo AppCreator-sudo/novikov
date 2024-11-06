@@ -48,11 +48,11 @@ function App() {
               &times;
             </button>
             <ul>
-              <li><Link to="/bar-menu" onClick={toggleMenu}>Меню Бара (для официантов)</Link></li>
+              <li><Link to="/bar-menu" onClick={toggleMenu}>Меню Бара</Link></li>
               <li><Link to="/schedule" onClick={toggleMenu}>График работы</Link></li>
               <li><Link to="/team" onClick={toggleMenu}>Команда проекта</Link></li>
-              <li><Link to="/concept" onClick={toggleMenu}>Концепция Хинкальной</Link></li>
-              <li><Link to="/kitchen-menu" onClick={toggleMenu}>Меню Кухни (для официантов)</Link></li>
+              <li><Link to="/concept" onClick={toggleMenu}>Концепция</Link></li>
+              <li><Link to="/kitchen-menu" onClick={toggleMenu}>Меню Кухни</Link></li>
             </ul>
           </nav>
 

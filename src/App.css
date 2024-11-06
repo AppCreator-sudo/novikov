@@ -20,7 +20,7 @@ body {
   background-size: 150%; /* Масштабируем логотип */
   background-repeat: no-repeat;
   background-position: center top; /* Логотип по центру и сверху */
-  opacity: 0.4; /* Полупрозрачность */
+  opacity: 0.8; /* Полупрозрачность */
   z-index: -1; /* Логотип под основным содержимым */
 }
 
