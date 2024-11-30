@@ -51,7 +51,7 @@ function App() {
               <li><Link to="/bar-menu" onClick={toggleMenu}>Меню Бара</Link></li>
               <li><Link to="/schedule" onClick={toggleMenu}>График работы</Link></li>
               <li><Link to="/team" onClick={toggleMenu}>Команда проекта</Link></li>
-              <li><Link to="/concept" onClick={toggleMenu}>Концепция</Link></li>
+              <li><Link to="/Concept" onClick={toggleMenu}>Концепция</Link></li>
               <li><Link to="/kitchen-menu" onClick={toggleMenu}>Меню Кухни</Link></li>
             </ul>
           </nav>

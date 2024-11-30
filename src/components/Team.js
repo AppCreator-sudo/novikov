@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Импортируем изображения участников команды
-import member1 from '../img1/1ing1.jpg'; // Замените на свои изображения
+import member1 from '../img1/112.jpg'; // Замените на свои изображения
 import member2 from '../img1/4.jpg';
 import member3 from '../img1/5.jpg';
 
