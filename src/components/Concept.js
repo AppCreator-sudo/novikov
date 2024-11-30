@@ -14,7 +14,7 @@ import img19 from '../img1/19.jpg'
 import img20 from '../img1/20.jpg'
 import img21 from '../img1/21.jpg'
 import img22 from '../img1/22.jpg'
-import img23 from '../img1/23.jpg'
+// import img23 from '../img1/23.jpg'
 import img24 from '../img1/24.jpg'
 import img25 from '../img1/25.jpg'
 import img26 from '../img1/26.jpg'
@@ -144,11 +144,6 @@ function ConceptSection() {
             id: 13,
             name: 'УЗБЕКСКИЕ ЛЕПЁШКИ И ГРУЗИНСКИЕ ШОТИ, ПРИГОТОВЛЕННЫЕ В ТАНДЫРЕ',
             images: [img21, img22]
-        },
-        {
-            id: 14,
-            name: 'СИБАС В СОЛИ',
-            images: [img23]
         },
         {
             id: 15,

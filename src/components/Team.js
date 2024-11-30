@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Импортируем изображения участников команды
-import member1 from '../img1/31.jpg'; // Замените на свои изображения
+import member1 from '../img1/1ing1.jpg'; // Замените на свои изображения
 import member2 from '../img1/4.jpg';
 import member3 from '../img1/5.jpg';
 
@@ -9,7 +9,7 @@ function TeamSection() {
     const teamMembers = [
         {
             id: 1,
-            name: "САФОНОВ ЕВГЕНИЙ ВИКТОРОВИЧ",
+            name: "ВАСИЛЬЕВ СЕРГЕЙ МИХАЙЛОВИЧ",
             position: "БРЕНД - ШЕФ(МОСКВА)",
             image: member1
         },
